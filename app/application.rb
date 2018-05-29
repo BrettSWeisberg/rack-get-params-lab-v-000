@@ -33,5 +33,5 @@ class Application
 
   def cart(env)
     binding.pry
-    if
+    
 end
