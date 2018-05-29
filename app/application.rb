@@ -32,7 +32,9 @@ class Application
   end
 
   def cart(env)
-    binding.pry
+    if @@cart.count == 0
+      resp.write "Your cart is empty"
+    end
   end
   
 end
