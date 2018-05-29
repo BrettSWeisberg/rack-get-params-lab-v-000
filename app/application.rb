@@ -39,10 +39,10 @@ class Application
         resp.write "item"
       end
     end
+    binding.binding.pry
   end
 
   def add
-
   end
-binding.pry
+
 end
