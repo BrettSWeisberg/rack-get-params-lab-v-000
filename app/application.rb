@@ -32,7 +32,6 @@ class Application
   end
 
   def shopping_cart_rack_app
-    binding.pry
     if @@cart.count == 0
       resp.write "Your cart is empty"
     else
