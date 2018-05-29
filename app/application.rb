@@ -32,6 +32,7 @@ class Application
   end
 
   def cart
+    binding.pry
     if @@cart.count == 0
       resp.write "Your cart is empty"
     else
@@ -39,7 +40,7 @@ class Application
         resp.write "item"
       end
     end
-    binding.pry
+
   end
 
   def add
