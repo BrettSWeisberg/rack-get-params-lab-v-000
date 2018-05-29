@@ -31,7 +31,7 @@ class Application
     end
   end
 
-  def cart(env)
+  def cart
     if @@cart.count == 0
       resp.write "Your cart is empty"
     else
