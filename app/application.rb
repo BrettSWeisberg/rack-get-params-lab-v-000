@@ -24,9 +24,7 @@ class Application
       else
       resp.write "Your cart is empty"
       end
-
     elsif req.path.match(/add/)
-    
       add_term = req.params["item"]
       if @@items.include?(add_term)
         @@cart << add_term
