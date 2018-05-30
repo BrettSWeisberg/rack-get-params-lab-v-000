@@ -24,7 +24,13 @@ class Application
       else
       resp.write "Your cart is empty"
       end
-    else
+    elsif req.path.match(/add/)
+      search_term = req.params["q"]
+      if @@item.include?(search_term)
+        @@cart << search_term
+      else
+        resp.write "We do not have item"
+      end
       resp.write "Path Not Found"
     end
     resp.finish
