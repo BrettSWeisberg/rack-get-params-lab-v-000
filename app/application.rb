@@ -19,7 +19,6 @@ class Application
     else
       resp.write "Path Not Found"
     end
-    binding.pry
     resp.finish
   end
 
