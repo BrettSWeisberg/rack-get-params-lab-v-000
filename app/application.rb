@@ -45,12 +45,3 @@ class Application
     end
   end
 end
-
-  #
-  # end
-  #
-  # def add(search_term)
-  #   binding.pry
-  #   search_term = req.params["q"]
-  #
-  # end
