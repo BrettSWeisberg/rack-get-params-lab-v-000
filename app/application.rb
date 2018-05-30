@@ -26,6 +26,7 @@ class Application
       end
 
     elsif req.path.match(/add/)
+      binding.pry
       add_term = req.params["item"]
       if @@items.include?(add_term)
         @@cart << add_term
