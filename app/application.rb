@@ -37,15 +37,6 @@ class Application
     end
   end
 
-
-  #   if @@cart.count == 0
-  #     resp.write "Your cart is empty"
-  #   else
-  #     @@cart.each do |item|
-  #       resp.write "#{item}\n"
-  #     end
-  #       resp.finish
-  #   end
   #
   # end
   #
@@ -54,5 +45,3 @@ class Application
   #   search_term = req.params["q"]
   #
   # end
-
-end
