@@ -31,6 +31,7 @@ class Application
       else
         resp.write "We do not have item"
       end
+    else
       resp.write "Path Not Found"
     end
     resp.finish
