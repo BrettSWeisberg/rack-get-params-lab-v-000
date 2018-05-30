@@ -30,7 +30,7 @@ class Application
       if @@items.include?(add_term)
         @@cart << add_term
       else
-        resp.write "We don't have item"
+        resp.write "We don't have that item"
       end
     else
       resp.write "Path Not Found"
