@@ -32,17 +32,23 @@ class Application
   end
 
   def shopping_cart_rack_app
+
     if @@cart.count == 0
       resp.write "Your cart is empty"
     else
       @@cart.each do |item|
-        resp.write "item"
+        resp.write "#{item}\n"
       end
+        resp.finish
     end
 
   end
 
-  def add
+  def add(search_term)
+    search_term = req.params["q"]
+    binding.pry
+  end
+
   end
 
 end
